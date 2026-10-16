@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Courses</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f4f6f9;
+            text-align: center;
+        }
+        header {
+            background: #4f46e5;
+            color: white;
+            padding: 20px;
+        }
+        nav a {
+            color: white;
+            margin: 12px;
+            text-decoration: none;
+        }
+        .courses {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 30px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            width: 220px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #ccc;
+        }
+        button {
+            background: #4f46e5;
+            color: white;
+            border: none;
+            padding: 10px 18px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer {
+            background: #222;
+            color: white;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>ONLINE COURSE PLATFORM</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#courses">Courses</a>
+        <a href="#about">About</a>
+    </nav>
+</header>
+
+<section id="home">
+    <h2>Learn New Skills Online</h2>
+</section>
+
+<section id="courses">
+    <h2>Available Courses</h2>
+    <div class="courses">
+        <div class="card">
+            <h3>Web Development</h3>
+            <p>Learn HTML, CSS and JavaScript.</p>
+            <p>Price: ₹999</p>
+            <button onclick="enroll('Web Development')">Enroll Now</button>
+        </div>
+        <div class="card">
+            <h3>Python Programming</h3>
+            <p>Learn Python from the basics.</p>
+            <p>Price: ₹799</p>
+            <button onclick="enroll('Python Programming')">Enroll Now</button>
+        </div>
+        <div class="card">
+            <h3>Graphic Design</h3>
+            <p>Learn creative design skills.</p>
+            <p>Price: ₹599</p>
+            <button onclick="enroll('Graphic Design')">Enroll Now</button>
+        </div>
+    </div>
+</section>
+<script>
+    function enroll(course) {
+        alert("You selected " + course + ". Enrollment system coming soon!");
+    }
+</script>
+
+</body>
+</html>
